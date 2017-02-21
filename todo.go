@@ -1,11 +1,12 @@
 package main
 
-import "time"
+//import "time"
 
 type Todo struct {
-	Name      string    `json:"name"`
-	Completed bool      `json:"completed"`
-	Due       time.Time `json:"due"`
+	Id        int    `json:"id"`
+	Name      string `json:"name"`
+	Completed int    `json:"completed"`
+	Due       string `json:"due"`
 }
 
 type Todos []Todo
